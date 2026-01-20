@@ -1,0 +1,46 @@
+# Top Menu
+topmenu:
+
+- title: Home
+  url: ""
+
+- title: About
+  url: "about/"
+
+- title: Contact
+  url: "contact/"
+
+- title: Write for us
+  url: "write-for-us/"
+
+- title: Free 8K Images
+  url: "ur-cristiano-posters/"
+  class: "ml-2 btn btn-dark text-white px-3"
+
+# Footer Menu
+footermenu:
+
+- title: Home
+  url: ""
+
+- title: Privacy Policy
+  url: "privacy-policy/"
+
+- title: Contact
+  url: "contact/"
+
+- title: Write for us
+  url: "write-for-us/"
+
+- title: Affiliate Policy
+  url: "affiliate-policy/"
+
+- title: Disclaimer
+  url: "disclaimer/"
+
+- title: Terms of Service
+  url: "terms-of-service/"
+
+# - title: Download
+#   url: "#"  
+#   external: true

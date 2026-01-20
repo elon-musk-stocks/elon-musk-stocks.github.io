@@ -1,0 +1,103 @@
+name: Gemini AI Auto Blog Publisher
+on:
+  push:
+    branches: [ master ]
+  schedule:
+    - cron: "0 */23 * * *"
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-dejavu-core fonts-dejavu-extra
+      
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install google-genai pillow requests google-auth google-api-python-client tweepy instagrapi
+      
+      - name: Verify environment
+        run: |
+          python --version
+          pip list | grep -E "(pillow|requests|google-genai|instagrapi)"
+      
+      - name: Generate blog post
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FREEPIK_API_KEY: ${{ secrets.FREEPIK_API_KEY }}
+          GOOGLE_SEARCH_API_KEY: ${{ secrets.GOOGLE_SEARCH_API_KEY }}
+          GOOGLE_SEARCH_ENGINE_ID: ${{ secrets.GOOGLE_SEARCH_ENGINE_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_SPREADSHEET_ID: ${{ secrets.GOOGLE_SPREADSHEET_ID }}
+          INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
+          INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
+          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
+          TWITTER_USERNAME: ${{ secrets.TWITTER_USERNAME }}
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_PERSON_ID: ${{ secrets.LINKEDIN_PERSON_ID }}
+          WEBPUSHR_API_KEY: ${{ secrets.WEBPUSHR_API_KEY }}
+          WEBPUSHR_AUTH_TOKEN: ${{ secrets.WEBPUSHR_AUTH_TOKEN }}
+        run: |
+          python scripts/generate_posts.py
+      
+      - name: Verify generated files
+        run: |
+          echo "📋 Generated posts:"
+          ls -lh _posts/ | tail -5
+          echo ""
+          echo "🖼️ Generated images:"
+          ls -lh assets/images/ | tail -5
+      
+      - name: Debug files
+        run: |
+          echo "=== Working Directory ==="
+          pwd
+          ls -la
+          echo ""
+          echo "=== Posts Directory ==="
+          ls -lah _posts/ | tail -10
+          echo ""
+          echo "=== Images Directory ==="
+          ls -lah assets/images/ | tail -10
+          echo ""
+      
+      - name: Commit & Push changes
+        run: |
+          git config user.name "gemini-blog-bot"
+          git config user.email "bot@github.com"
+          
+          # Pull latest changes first to avoid conflicts
+          git pull --rebase origin master || echo "Already up to date"
+          
+          # Add everything
+          git add .
+          
+          # Show status
+          git status
+          
+          # Commit if there are changes
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "🤖 Auto-post: $(date +'%Y-%m-%d')"
+            git push origin master
+            echo "✅ Changes pushed"
+          else
+            echo "⚠️ No changes to commit"
+          fi
