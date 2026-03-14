@@ -1,5 +1,5 @@
-title: "UR. Cristiano FC"
-email: ur.cristiano.help@gmail.com
+title: "Lionel Messi FC"
+email: lionelmessi.help@gmail.com
 timezone: UTC
 baseurl: ""
 permalink: "/:title/"
@@ -26,11 +26,11 @@ authors:
   ishowspeed:
     name: IshowSpeed
     display_name: IshowSpeed
-    avatar: 'assets/images/Author-IshowSpeed.webp'
-    email: ur.cristiano.help@gmail.com
-    web: https://www.urcristianofc.com
-    twitter: https://x.com/IshowSpeedSui
-    description: "Hi, I am  IShowSpeed, the author of this article, If you had to choose between ronaldo and messi, who would you choose? Kindly Choose Ronaldo, or i will smash your nuts."
+    avatar: 'assets/images/Author-Messi.webp'
+    email: lionelmessi.help@gmail.com
+    web: https://messi-lionel.github.io
+    twitter: https://x.com/LionelMessi
+    description: "Hi, I am the author of this article. Lionel Messi is widely regarded as one of the greatest footballers of all time. This site is dedicated to providing the latest updates, stats, and lifestyle insights about Messi."
  
 # Social
 social:

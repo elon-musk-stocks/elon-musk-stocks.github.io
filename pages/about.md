@@ -2,19 +2,19 @@
 layout: page
 title: "About Us"
 permalink: /about/
-description: "Learn more about ur-cristiano-fc.github.io, your ultimate destination for football news, CR7 updates, and match highlights."
+description: "Learn more about messi-lionel.github.io, your ultimate destination for football news, Lionel Messi updates, and match highlights."
 ---
 
-Welcome to **[ur-cristiano-fc](https://ur-cristiano-fc.github.io/)** – your ultimate hub for everything **Cristiano Ronaldo** and world football 🌍⚽
+Welcome to **[Lionel Messi FC](https://messi-lionel.github.io/)** – your ultimate hub for everything **Lionel Messi** and world football 🌍⚽
 
-Whether you're a die-hard CR7 fan, a Premier League follower, or just someone who lives for the thrill of the game, this is the place for you.
+Whether you're a die-hard Messi fan, a Ligue 1 or MLS follower, or just someone who lives for the thrill of the game, this is the place for you.
 
 ---
 
 ## 🎯 Our Mission
 
 Our goal is simple:  
-To deliver the latest football news, matchday highlights, transfer updates, and exclusive insights with a special focus on **Cristiano Ronaldo** – the legend, the GOAT, the icon. 🐐
+To deliver the latest football news, matchday highlights, transfer updates, and exclusive insights with a special focus on **Lionel Messi** – the legend, the GOAT, the icon. 🐐
 
 ---
 
@@ -22,11 +22,11 @@ To deliver the latest football news, matchday highlights, transfer updates, and 
 
 - ⚡ **Breaking football news**
 - 🎥 **Live match commentary & post-match analysis**
-- 🏆 **Cristiano Ronaldo career updates**
+- 🏆 **Lionel Messi career updates**
 - 📅 **Fixtures, results, and performance stats**
 - 💬 **Fan reactions and trending football moments**
 
-UR Cristiano FC aims to make football news **engaging, easy-to-understand, and always up-to-date**.
+Lionel Messi FC aims to make football news **engaging, easy-to-understand, and always up-to-date**.
 
 ---
 
@@ -35,11 +35,11 @@ UR Cristiano FC aims to make football news **engaging, easy-to-understand, and a
 We’d love to hear from you!  
 For feedback, collabs, or just to say hello, reach out:
 
-📧 **ur.cristiano.help@gmail.com**
+📧 **lionelmessi.help@gmail.com**
 
 Follow us, support us, and let’s celebrate football greatness together! 🚀  
-_#ForTheFans #CR7Forever_
+_#ForTheFans #MessiForever_
 
 ---
 
-*Thank you for visiting **[ur-cristiano-fc](https://ur-cristiano-fc.github.io/)** — powered by passion, backed by football love.* ❤️⚽
+*Thank you for visiting **[Lionel Messi FC](https://messi-lionel.github.io/)** — powered by passion, backed by football love.* ❤️⚽
