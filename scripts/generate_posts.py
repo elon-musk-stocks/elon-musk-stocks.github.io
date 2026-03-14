@@ -9,7 +9,6 @@ from config import *
 from keywords_handler import get_keyword_row, parse_keyword_row, remove_keyword_from_file, get_keywords_count
 from article_generator import generate_article, generate_image_prompt
 from image_generator import generate_image_freepik
-from google_sheets_logger import log_to_google_sheets
 from webpushr_notifier import send_blog_post_notification, get_subscriber_count
 
 
@@ -176,15 +175,6 @@ def main():
                 print("Step 4b: Logging to Google Sheets")
                 print("=" * 60)
                 
-                
-                try:
-                    log_to_google_sheets(
-                        title, focus_kw, permalink,
-                        image_file, article, indexing_status
-                    )
-                    print(f"✅ Logged to Google Sheets")
-                except Exception as e:
-                    print(f"⚠️ Sheets logging failed (non-critical): {e}")
                 
                 # Step 4c: Send Push Notification
                 try:

@@ -73,6 +73,20 @@ class GoogleImageSearchHandler:
             
             if 'items' not in data:
                 print(f"⚠️ No images found for query: {query}")
+                # --- DEBUG: show full API response to diagnose the issue ---
+                print(f"🔎 Full API response keys: {list(data.keys())}")
+                if 'error' in data:
+                    err = data['error']
+                    print(f"❌ API Error {err.get('code')}: {err.get('message')}")
+                    for detail in err.get('errors', []):
+                        print(f"   reason={detail.get('reason')} domain={detail.get('domain')}")
+                if 'searchInformation' in data:
+                    si = data['searchInformation']
+                    print(f"📊 Total results: {si.get('totalResults', '0')}")
+                if 'queries' in data:
+                    req = data['queries'].get('request', [{}])[0]
+                    print(f"📋 Query sent: cx={req.get('cx')}, q={req.get('searchTerms')}, type={req.get('searchType')}")
+                # --- END DEBUG ---
                 return []
             
             image_results = []
@@ -90,10 +104,28 @@ class GoogleImageSearchHandler:
             return image_results
             
         except requests.exceptions.HTTPError as e:
-            if e.response.status_code == 429:
-                print("❌ Google API rate limit exceeded. Wait and try again.")
+            status = e.response.status_code
+            if status == 429:
+                print("❌ Google API rate limit exceeded (429). Wait and try again.")
+            elif status == 403:
+                print("❌ Google API 403 Forbidden - likely causes:")
+                print("   1. API key invalid or Custom Search API not enabled")
+                print("   2. Daily quota of 100 queries exceeded")
+                print("   3. Billing not set up on Google Cloud project")
+                try:
+                    err_data = e.response.json()
+                    print(f"   API message: {err_data.get('error', {}).get('message', 'unknown')}")
+                except Exception:
+                    pass
+            elif status == 400:
+                print("❌ Google API 400 Bad Request - Search Engine ID (cx) may be wrong")
+                try:
+                    err_data = e.response.json()
+                    print(f"   API message: {err_data.get('error', {}).get('message', 'unknown')}")
+                except Exception:
+                    pass
             else:
-                print(f"❌ Google Custom Search API error: {e}")
+                print(f"❌ Google Custom Search API HTTP {status} error: {e}")
             return []
         except Exception as e:
             print(f"❌ Error searching Google: {e}")
