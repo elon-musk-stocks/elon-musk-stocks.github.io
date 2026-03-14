@@ -8,6 +8,8 @@ IMAGES_DIR = "assets/images"
 
 # Site settings
 SITE_DOMAIN = "https://messi-lionel.github.io"
+MAIN_SUBJECT = "Lionel Messi"
+MAIN_PLAYER_HASHTAGS = "#messi #lionelmessi #football #soccer #intermiami #goat"
 
 # AI Models
 TEXT_MODEL = "gemini-2.5-flash"
