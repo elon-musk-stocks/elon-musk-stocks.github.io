@@ -1,6 +1,6 @@
 """Generate blog articles using Gemini AI"""
 from google import genai
-from config import TEXT_MODEL, GEMINI_API_KEY
+from config import TEXT_MODEL, GEMINI_API_KEY, MAIN_SUBJECT
 import re
 
 client = genai.Client(api_key=GEMINI_API_KEY)
@@ -82,15 +82,15 @@ description: "{description}"
 keywords: "{focus_kw}"
 author: ishowspeed
 image: assets/images/featured_{permalink}.webp
-afflink: https://amzn.to/43Xm4Ci
-affimage: assets/images/affiliate/Siuuuu-Celebration-Soccer-Night-Light-3D-Illusion.webp
-affname: "Siuuuu Celebration Soccer Night Light 3D Illusion"
-affdesc: "The soccer desk lamp is made of high-quality acrylic and ABS materials, LED light is stable and eye-friendly"
-currentprice: $19.99
-reviewnum: 294
-brand: Cristiano Ronaldo
-item: Decorations Gift
-specialfeature: Dimmable Lamp
+afflink: https://amzn.to/4it8R8O
+affimage: assets/images/affiliate/Lionel-Messi-Inter-Miami-Pink-Jersey-Figurine.webp
+affname: "Lionel Messi Inter Miami Pink Jersey Figurine"
+affdesc: "High-quality Lionel Messi Inter Miami collectible figurine. Perfect for any Messi fan's collection."
+currentprice: $24.99
+reviewnum: 512
+brand: {MAIN_SUBJECT}
+item: Collectible Figurine
+specialfeature: Signature base
 ---"""
        
     return front_matter
@@ -134,9 +134,9 @@ def generate_image_prompt(title):
     """Generate image prompt for Freepik AI"""
     
     # Remove celebrity names from title for image generation
-    title_cleaned = title.replace("Cristiano Ronaldo", "professional athlete")
-    title_cleaned = title_cleaned.replace("Ronaldo", "elite footballer")
-    title_cleaned = title_cleaned.replace("CR7", "top athlete")
+    title_cleaned = title.replace("Lionel Messi", "professional athlete")
+    title_cleaned = title_cleaned.replace("Messi", "elite footballer")
+    title_cleaned = title_cleaned.replace("GOAT", "top athlete")
     
     prompt = f"""
 create a search term to get a high-quality image  related to the blog post with the following from unsplash and pixel
@@ -162,9 +162,9 @@ Return ONLY the image prompt, nothing else.
     image_prompt = response.text.strip()
     
     # Additional safety check - remove any celebrity names from generated prompt
-    image_prompt = image_prompt.replace("Cristiano Ronaldo", "professional athlete")
-    image_prompt = image_prompt.replace("Ronaldo", "elite footballer")
-    image_prompt = image_prompt.replace("CR7", "top athlete")
+    image_prompt = image_prompt.replace("Lionel Messi", "professional athlete")
+    image_prompt = image_prompt.replace("Messi", "elite footballer")
+    image_prompt = image_prompt.replace("GOAT", "top athlete")
     
     print(f"✅ Image prompt: {image_prompt[:100]}...")
     

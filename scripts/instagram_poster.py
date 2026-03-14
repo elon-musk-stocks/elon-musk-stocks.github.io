@@ -3,6 +3,7 @@ import os
 import time
 from instagrapi import Client
 from instagrapi.exceptions import LoginRequired
+from config import MAIN_PLAYER_HASHTAGS, MAIN_SUBJECT
 from article_generator import client, TEXT_MODEL
 
 
@@ -35,7 +36,7 @@ Requirements:
 
 Format your response EXACTLY like this:
 CAPTION: [your engaging caption here with emojis]
-HASHTAGS: #cristiano #ronaldo #cr7 #football #soccer [more hashtags]
+HASHTAGS: {MAIN_PLAYER_HASHTAGS} [more hashtags]
 CTA: [call to action text]
 
 Generate the Instagram post:
@@ -81,9 +82,9 @@ Generate the Instagram post:
         # Fallback caption
         return {
             'caption': f"⚽ {title[:100]}",
-            'hashtags': "#cristiano #ronaldo #cr7 #football #soccer #cristianoronaldo",
+            'hashtags': MAIN_PLAYER_HASHTAGS,
             'cta': "🔗 Link in bio for full article!",
-            'full_caption': f"⚽ {title[:100]}\n\n🔗 Link in bio for full article!\n\n#cristiano #ronaldo #cr7 #football"
+            'full_caption': f"⚽ {title[:100]}\n\n🔗 Link in bio for full article!\n\n{MAIN_PLAYER_HASHTAGS}"
         }
 
 
@@ -223,11 +224,11 @@ def post_article_to_instagram(title, focus_kw, article, image_path, permalink):
 if __name__ == "__main__":
     # Test with sample data
     result = post_article_to_instagram(
-        title="Cristiano Ronaldo's Training Routine",
-        focus_kw="cristiano ronaldo training",
+        title=f"{MAIN_SUBJECT}'s Training Routine",
+        focus_kw=f"{MAIN_SUBJECT.lower()} training",
         article="Sample article content...",
         image_path="assets/images/test.webp",
-        permalink="ronaldo-training"
+        permalink="messi-training"
     )
     
     print(f"\nResult: {result}")

@@ -2,7 +2,7 @@
 import os
 import random
 from PIL import Image, ImageDraw, ImageFont
-from config import IMAGE_QUALITY, IMAGE_MAX_WIDTH, IMAGE_MAX_HEIGHT, OPTIMIZE_IMAGE
+from config import IMAGE_QUALITY, IMAGE_MAX_WIDTH, IMAGE_MAX_HEIGHT, OPTIMIZE_IMAGE, MAIN_SUBJECT
 from article_generator import client, TEXT_MODEL  # Import Gemini client
 
 try:
@@ -29,7 +29,7 @@ Given this blog post title: "{title}"
 Generate 2-3 Google Image search queries to find the most relevant photos for this article.
 
 Requirements:
-- ALWAYS include "cristiano ronaldo" in queries
+- ALWAYS include "{MAIN_SUBJECT}" in queries
 - If the title mentions specific people (mother, son, girlfriend, family), include them in the search
 - Make queries specific to the article topic
 - Keep queries short and focused (3-6 words each)
@@ -66,7 +66,7 @@ Now generate for the given title above. Return ONLY the search queries, one per 
     except Exception as e:
         print(f"⚠️ Gemini query generation failed: {e}")
         # Fallback to simple query
-        return ["cristiano ronaldo"]
+        return [MAIN_SUBJECT.lower()]
 
 
 def filter_relevant_images_with_gemini(title, image_results):
@@ -153,7 +153,7 @@ def generate_image_freepik(prompt, output_path):
     if not HAS_API_HANDLER:
         raise ImportError("google_image_handler module is required for collage generation")
     
-    print(f"🎨 Creating AI-powered collage with relevant Cristiano Ronaldo photos")
+    print(f"🎨 Creating AI-powered collage with relevant {MAIN_SUBJECT} photos")
     print(f"📝 Article Title: {prompt[:100]}...")
     
     # Step 1: Use Gemini to generate search queries
