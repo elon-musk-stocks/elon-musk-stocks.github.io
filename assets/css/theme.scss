@@ -1,7 +1,4 @@
----
----
-
-$green: #08a057 !default;
+--- --- $green: #08a057 !default;
 $blue: #3d61fd !default;
 
 @import 'bootstrap/bootstrap';
@@ -15,7 +12,7 @@ html {
 }
 
 body {
-    background: #e3b3b3;
+    background: #d6a7a7;
     font-size: 17px;
     transition: all 200ms linear;
     font-family: "PT Sans", sans-serif;
@@ -168,7 +165,7 @@ small,
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     position: fixed;
-    background: #e3b3b3;
+    background: #d6a7a7;
 }
 
 .social-icon {
@@ -195,7 +192,7 @@ small,
 /* Pages
 ================================================== */
 .hero {
-    background: #e3b3b3;
+    background: #d6a7a7;
     padding: 3rem 0;
 }
 
@@ -666,7 +663,7 @@ ul.tags li a:hover {
 }
 
 .sidebar h5 span {
-    background-color: #e3b3b3;
+    background-color: #d6a7a7;
     position: relative;
     z-index: 2;
     display: inline-block;
@@ -772,7 +769,7 @@ img {
 }
 
 .bottompagination span.navigation a {
-    background: #e3b3b3;
+    background: #d6a7a7;
     color: #333;
     padding: 5px;
     border-radius: 3px;
