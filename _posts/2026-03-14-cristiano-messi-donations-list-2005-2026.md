@@ -6,7 +6,7 @@ keywords: "lionel messi charity and donations list"
 author: ishowspeed
 image: assets/images/featured_cristiano-messi-donations-list-2005-2026.webp
 afflink: https://amzn.to/4it8R8O
-affimage: assets/images/affiliate/Lionel-Messi-Inter-Miami-Pink-Jersey-Figurine.webp
+affimage: assets/images/affiliate/Lionel-Messi-Inter-Miami-Pink-Jersey-Figurine.png
 affname: "Lionel Messi Inter Miami Pink Jersey Figurine"
 affdesc: "High-quality Lionel Messi Inter Miami collectible figurine. Perfect for any Messi fan's collection."
 currentprice: $24.99

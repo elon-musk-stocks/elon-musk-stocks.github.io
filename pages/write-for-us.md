@@ -1,16 +1,16 @@
 ---
 layout: page
-title: "Write for us – Ur Cristiano"
+title: "Write for us – Lionel Messi FC"
 permalink: /write-for-us/
-description: "Submit guest posts on Cristiano Ronaldo, football, sports lifestyle, fitness, and trending football topics."
+description: "Submit guest posts on Lionel Messi, football, sports lifestyle, fitness, and trending football topics."
 comments: false
 ---
 
-Welcome to the official page of **[Ur Cristiano](https://ur-cristiano-fc.github.io/)** — a dedicated platform for Cristiano Ronaldo content, football analysis, lifestyle stories, and trending sports updates.
+Welcome to the official page of **[Lionel Messi FC](https://messi-lionel.github.io/)** — a dedicated platform for Lionel Messi content, football analysis, lifestyle stories, and trending sports updates.
 
 Our site currently has a **Domain Authority (DA) of 15**, and **Domain Age is 15 years**, making it a growing and valuable platform for guest contributors, SEO writers, and football enthusiasts.
 
-For submissions or inquiries, contact us at: **[ur.cristiano.help@gmail.com](mailto:ur.cristiano.help@gmail.com)**
+For submissions or inquiries, contact us at: **[lionelmessi.help@gmail.com](mailto:lionelmessi.help@gmail.com)**
 
 ---
 
@@ -18,20 +18,20 @@ For submissions or inquiries, contact us at: **[ur.cristiano.help@gmail.com](mai
 
 We accept high‑quality articles in the following categories:
 
-* Cristiano Ronaldo news, lifestyle, stats, and achievements
+* Lionel Messi news, lifestyle, stats, and achievements
 * Football analysis, tactics, opinions, and match breakdowns
-* Player comparisons (e.g., Ronaldo vs Messi, modern footballers)
+* Player comparisons (e.g., Messi vs Ronaldo, modern footballers)
 * Football history, legendary moments, and records
 * Fitness, diet, and sports training content
 * Motivational stories, fan journeys, and football inspiration
 * Football gear reviews (shoes, jerseys, accessories)
 * Sports lifestyle and discipline‑related topics
 
-If your article is relevant to **Ronaldo**, **football**, **sports lifestyle**, or **fitness** it qualifies.
+If your article is relevant to **Messi**, **football**, **sports lifestyle**, or **fitness** it qualifies.
 
 ---
 
-## Why Publish with [https://ur-cristiano-fc.github.io/](https://ur-cristiano-fc.github.io/)
+## Why Publish with [https://messi-lionel.github.io/](https://messi-lionel.github.io/)
 
 Publishing on our platform gives you:
 
@@ -78,7 +78,7 @@ Please follow these editorial requirements:
 * Include a short **author bio** (2–3 lines)
 * Submit your article as a **Google Doc** or **Markdown file** to:
 
-📩 **[ur.cristiano.help@gmail.com](mailto:ur.cristiano.help@gmail.com)**
+📩 **[lionelmessi.help@gmail.com](mailto:lionelmessi.help@gmail.com)**
 
 Response time: **24–48 hours**.
 
@@ -91,7 +91,7 @@ We do not publish the following:
 * Articles that have been, or will be, published elsewhere.
 * Plagiarized or copied content
 * Low‑quality or spun content
-* Topics unrelated to Ronaldo, football, sports, or fitness
+* Topics unrelated to Messi, football, sports, or fitness
 * Controversial, political, or hate‑driven writing
 * Content with spam or commercial outbound links
 
@@ -104,7 +104,7 @@ We do not publish the following:
 
 ## Pricing for Guest Posts
 
-To maintain site quality and support the growth of **ur-cristiano-fc.github.io**, we charge a small publishing fee for approved guest posts.
+To maintain site quality and support the growth of **messi-lionel.github.io**, we charge a small publishing fee for approved guest posts.
 
 ### Current Pricing (2026)
 
@@ -133,7 +133,7 @@ Payment details will be shared upon submission approval.
 
 Send your completed draft to:
 
-**[ur.cristiano.help@gmail.com](mailto:ur.cristiano.help@gmail.com)**
+**[lionelmessi.help@gmail.com](mailto:lionelmessi.help@gmail.com)**
 
-We look forward to featuring your content on **ur-cristiano-fc.github.io**!
+We look forward to featuring your content on **messi-lionel.github.io**!
 

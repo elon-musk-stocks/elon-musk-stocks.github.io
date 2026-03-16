@@ -1,18 +1,18 @@
 ---
 layout: page
 title: "Privacy Policy"
-description: "Read the privacy policy of ur-cristiano-fc.github.io, your source for football news and updates including Cristiano Ronaldo, CR7, and more."
+description: "Read the privacy policy of messi-lionel.github.io, your source for football news and updates including Lionel Messi, LM10, and more."
 permalink: /privacy-policy/
 comments: false
 ---
 
-Welcome to **[ur-cristiano-fc](https://ur-cristiano-fc.github.io/)**. Your privacy is important to us. This Privacy Policy explains how Ur Cristiano FC collects, use, and protect your information when you visit our website.
+Welcome to **[Lionel Messi FC](https://messi-lionel.github.io/)**. Your privacy is important to us. This Privacy Policy explains how Lionel Messi FC collects, use, and protect your information when you visit our website.
 
 ---
 
-## 🔍 Information Ur Cristiano FC Collects
+## 🔍 Information Lionel Messi FC Collects
 
-Ur Cristiano FC may collect non-personal identification information about users whenever they interact with our site. This includes:
+Lionel Messi FC may collect non-personal identification information about users whenever they interact with our site. This includes:
 
 - Browser name
 - IP address
@@ -21,7 +21,7 @@ Ur Cristiano FC may collect non-personal identification information about users 
 - Internet service provider
 - Pages visited and time spent
 
-If you subscribe to our newsletter or leave comments (if enabled), Ur Cristiano FC may collect your name and email address.
+If you subscribe to our newsletter or leave comments (if enabled), Lionel Messi FC may collect your name and email address.
 
 ---
 
@@ -37,28 +37,28 @@ You can disable cookies through your browser settings.
 
 ---
 
-## 📩 How Ur Cristiano FC Uses Collected Information
+## 📩 How Lionel Messi FC Uses Collected Information
 
-Ur Cristiano FC uses the collected information to:
+Lionel Messi FC uses the collected information to:
 
 - Improve our website experience
 - Personalize content
 - Monitor analytics and user behavior
 - Send periodic emails or updates (only if you opt-in)
 
-Ur Cristiano FC **does not sell**, trade, or rent user personal information.
+Lionel Messi FC **does not sell**, trade, or rent user personal information.
 
 ---
 
-## 🔐 How Ur Cristiano FC Protects Your Information
+## 🔐 How Lionel Messi FC Protects Your Information
 
-Ur Cristiano FC uses industry-standard security tools and best practices to ensure your data is safe. However, please note that no method of transmission over the Internet is 100% secure.
+Lionel Messi FC uses industry-standard security tools and best practices to ensure your data is safe. However, please note that no method of transmission over the Internet is 100% secure.
 
 ---
 
 ## 👥 Third-Party Services
 
-Ur Cristiano FC may use third-party services like:
+Lionel Messi FC may use third-party services like:
 
 - Google Analytics
 - Google AdSense
@@ -70,7 +70,7 @@ These services may use cookies or tracking technologies. Please refer to their i
 
 ## 🚫 Children's Privacy
 
-Our site is not intended for children under the age of 13. Ur Cristiano FC does not knowingly collect any information from children.
+Our site is not intended for children under the age of 13. Lionel Messi FC does not knowingly collect any information from children.
 
 ---
 
@@ -82,7 +82,7 @@ By using our site, you consent to our Privacy Policy.
 
 ## 🔁 Changes to This Policy
 
-Ur Cristiano FC may update this policy from time to time. When Ur Cristiano FC does, it will revise the "Last updated" date at the top of this page.
+Lionel Messi FC may update this policy from time to time. When Lionel Messi FC does, it will revise the "Last updated" date at the top of this page.
 
 ---
 
@@ -90,7 +90,7 @@ Ur Cristiano FC may update this policy from time to time. When Ur Cristiano FC d
 
 If you have any questions about this Privacy Policy, you can contact us:
 
-**Email**: [ur.cristiano.help@gmail.com]
+**Email**: [lionelmessi.help@gmail.com]
 
-Thank you for trusting **[ur-cristiano-fc](https://ur-cristiano-fc.github.io/)** – your home for football passion and CR7 news!
+Thank you for trusting **[Lionel Messi FC](https://messi-lionel.github.io/)** – your home for football passion and LM10 news!
 
