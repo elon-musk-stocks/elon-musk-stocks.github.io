@@ -4,7 +4,7 @@ title: "Lionel Messi Donations List 2005–2026: How His Charity Giving Grew wit
 description: "Explore the comprehensive Lionel Messi charity and donations list from 2005-2026. Witness how his impactful giving grew throughout his iconic career."
 keywords: "lionel messi charity and donations list"
 author: ishowspeed
-image: assets/images/featured_cristiano-messi-donations-list-2005-2026.webp
+image: assets/images/featured_Messi-Ronaldo-donations-list-2005-2026.webp
 afflink: https://amzn.to/4it8R8O
 affimage: assets/images/affiliate/Lionel-Messi-Inter-Miami-Pink-Jersey-Figurine.png
 affname: "Lionel Messi Inter Miami Pink Jersey Figurine"

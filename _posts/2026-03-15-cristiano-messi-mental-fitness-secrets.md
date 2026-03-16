@@ -4,7 +4,7 @@ title: "How Lionel Messi Trains His Mind: Mental Fitness Secrets"
 description: "Unlock Lionel Messi's mental fitness secrets to understand how he trains his mind for peak performance and master key lionel messi mental training techniques."
 keywords: "lionel messi mental training"
 author: ishowspeed
-image: assets/images/featured_cristiano-messi-mental-fitness-secrets.webp
+image: assets/images/featured_Messi-Ronaldo-mental-fitness-secrets.webp
 afflink: https://amzn.to/4it8R8O
 affimage: assets/images/affiliate/Lionel-Messi-Inter-Miami-Pink-Jersey-Figurine.webp
 affname: "Lionel Messi Inter Miami Pink Jersey Figurine"
