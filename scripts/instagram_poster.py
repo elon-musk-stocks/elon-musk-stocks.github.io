@@ -9,7 +9,7 @@ from article_generator import client, TEXT_MODEL
 
 def generate_instagram_caption(title, focus_kw, article_excerpt):
     """Use Gemini AI to generate SEO-optimized Instagram caption
-    
+     
     Args:
         title: Article title
         focus_kw: Focus keyword
