@@ -82,15 +82,6 @@ description: "{description}"
 keywords: "{focus_kw}"
 author: ishowspeed
 image: assets/images/featured_{permalink}.webp
-afflink: https://amzn.to/4it8R8O
-affimage: assets/images/affiliate/Lionel-Messi-Inter-Miami-Pink-Jersey-Figurine.webp
-affname: "Lionel Messi Inter Miami Pink Jersey Figurine"
-affdesc: "High-quality Lionel Messi Inter Miami collectible figurine. Perfect for any Messi fan's collection."
-currentprice: $24.99
-reviewnum: 512
-brand: {MAIN_SUBJECT}
-item: Collectible Figurine
-specialfeature: Signature base
 ---"""
        
     return front_matter
