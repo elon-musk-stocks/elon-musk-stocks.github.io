@@ -14,10 +14,10 @@
   <!-- <script 
   src="https://www.paypal.com/sdk/js?client-id=BAAhFzxuQHxgvHSs4dxSXuyGQLk172BY_THfqNnMmIBI3AWlwKPu6fgK1kh3Qvoe7Dvdrt1VQmSQzJ4eHU&components=hosted-buttons&disable-funding=venmo&currency=USD">
 </script> -->
-  <link href="{{ "/assets/css/theme.css" | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M%S" }}" rel="stylesheet">
+  <link href="{{ " /assets/css/theme.css" | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M%S" }}" rel="stylesheet">
 
   <!-- custom CSS - Remove this if you don't use it or choose to customize the stylesheet with sass-->
-  <link href="{{ "/assets/css/custom.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ " /assets/css/custom.css" | relative_url }}" rel="stylesheet">
   <!-- custom CSS end-->
 
   {% if jekyll.environment == "production" %}
@@ -26,18 +26,33 @@
     <meta name="msvalidate.01" content="D949E2F107551F710F1D7CCF92BE9E7E" />
     <meta name="yandex-verification" content="212ada5c39bca3a1" />
     <meta name="seznam-wmt" content="UVQAaXLwBhAM8R50me3mnRXAq3V1Mp0p" /> -->
-    <meta name="google-site-verification" content="mZHNBYIQ6POrHBZsNz5-7NvYiWDaF7FfTCR-BP__Bcs" />
-    <meta name="msvalidate.01" content="D949E2F107551F710F1D7CCF92BE9E7E" />
+  <meta name="google-site-verification" content="mZHNBYIQ6POrHBZsNz5-7NvYiWDaF7FfTCR-BP__Bcs" />
+  <meta name="msvalidate.01" content="D949E2F107551F710F1D7CCF92BE9E7E" />
   <meta name="naver-site-verification" content="" />
+
+  <!-- start webpushr tracking code -->
+  <script>(function (w, d, s, id) {
+      if (typeof (w.webpushr) !== 'undefined') return; w.webpushr = w.webpushr || function () { (w.webpushr.q = w.webpushr.q || []).push(arguments) }; var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.id = id; js.async = 1; js.src = "https://cdn.webpushr.com/app.min.js";
+      fjs.parentNode.appendChild(js);
+    }(window, document, 'script', 'webpushr-jssdk'));
+    webpushr('setup', { 'key': 'BJGJli7xASwfeXdbALZx7xdWXue_BL4tm-gCCEr9g0zME_UDc8-_Be0vONv8c8hRTx5BQPH9wzgqXV-e1n23F9A' });</script>
+  <!-- end webpushr tracking code -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X1DV77RV2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9X1DV77RV2');
+  </script>
 
 
   {% endif %}
-
-  <script
-    id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/6d5de8e0f9906798198015c28/1befeca02296411d03609229d.js");</script>
-
-  <!-- Rb2b integration -->
-  <script>!function (key) { if (window.reb2b) return; window.reb2b = { loaded: true }; var s = document.createElement("script"); s.async = true; s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz"; document.getElementsByTagName("script")[0].parentNode.insertBefore(s, document.getElementsByTagName("script")[0]); }("4N210HQ5Y46Z");</script>
+  <!-- mailchimp -->
+  <!-- <script
+    id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/6d5de8e0f9906798198015c28/1befeca02296411d03609229d.js");</script> -->
 
 
 
