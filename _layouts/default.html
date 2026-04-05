@@ -14,11 +14,12 @@
   <!-- <script 
   src="https://www.paypal.com/sdk/js?client-id=BAAhFzxuQHxgvHSs4dxSXuyGQLk172BY_THfqNnMmIBI3AWlwKPu6fgK1kh3Qvoe7Dvdrt1VQmSQzJ4eHU&components=hosted-buttons&disable-funding=venmo&currency=USD">
 </script> -->
-  <link href="{{ "/assets/css/theme.css" | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M%S" }}" rel="stylesheet">
 
-  <!-- custom CSS - Remove this if you don't use it or choose to customize the stylesheet with sass-->
+  <!-- CRITICAL: Do not add leading spaces in the Liquid strings below. 
+       Breaking these paths will disable the site's styling. -->
+  <link href="{{ "/assets/css/theme.css" | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M%S" }}" rel="stylesheet">
   <link href="{{ "/assets/css/custom.css" | relative_url }}" rel="stylesheet">
-  <!-- custom CSS end-->
+  <!-- END CRITICAL -->
 
   {% if jekyll.environment == "production" %}
   <!-- Added searchs -->
@@ -55,10 +56,6 @@
   <!-- mailchimp -->
   <!-- <script
     id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/6d5de8e0f9906798198015c28/1befeca02296411d03609229d.js");</script> -->
-
-
-
-
 </head>
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
@@ -95,117 +92,117 @@
             
             <a class="d-inline-block social-icon" target="_blank" href="{{site.social.instagram}}">
               <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-            </svg>
-            </a>
-      
-            <a class="d-inline-block social-icon" target="_blank" href="{{site.social.facebook}}">
-              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-            </svg>
-            </a>
-
-          </div> -->
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-            class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-            <path
-              d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-          </svg>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto font-weight-bold d-flex align-items-center">
-            {% for item in site.data.menus.topmenu %}
-            <li class="nav-item">
-              <a class="nav-link px-3 {% if item.class %}btn-grad{% endif %}"
-                href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}"
-                alt="{{item.title}}">{{item.title}}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-  </div>
-
-
-  <!-- Container
-================================================== -->
-  <main class="container">
-    {{ content }}
-  </main>
-
-  <!-- Footer
-================================================== -->
-  <footer class="footer container text-center">
-
-    <!-- CREDITS BEGIN.-->
-
-    <div class="credits mx-auto text-center mb-3">
-      <a class="hover-opacity font-weight-bold" href="/">
-        <img src="{{site.baseurl}}/assets/images/messi-lionel-fc-logo.png" alt="Lionel Messi FC">
-      </a>
-    </div>
-    <!-- CREDITS END -->
-
-    <ul class="p-0 mb-1 small">
-      {% for item in site.data.menus.footermenu %}
-      <li>
-        <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}"
-          alt="{{item.title}}">{{item.title}}</a>
-      </li>
-      {% endfor %}
-    </ul>
-    <div class="copyright small">
-      Copyright © {{site.title}}. All rights reserved.
-    </div>
-  </footer>
-
-  <!-- JavaScript
-================================================== -->
-  <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
-
-  <div class="gtranslate_wrapper"></div>
-  <script>window.gtranslateSettings = { "default_language": "en", "native_language_names": true, "detect_browser_language": true, "wrapper_selector": ".gtranslate_wrapper" }</script>
-  <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
-
-  <!-- Bot Detection -->
-  <script>
-    // Initialize the agent on page load.
-    const fpPromise = import('https://fpjscdn.net/v3/piJr4xhOOfCxkyMC6Ci7')
-      .then(FingerprintJS => FingerprintJS.load())
-
-    // Get the visitorId when you need it.
-    fpPromise
-      .then(fp => fp.get())
-      .then(result => {
-        const visitorId = result.visitorId
-        console.log(visitorId)
-      })
-  </script>
-
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=105712574', 'ym');
-
-    ym(105712574, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", accurateTrackBounce: true, trackLinks: true });
-  </script>
-  <noscript>
-    <div><img src="https://mc.yandex.ru/watch/105712574" style="position:absolute; left:-9999px;" alt="" /></div>
-  </noscript>
-  <!-- /Yandex.Metrika counter -->
-
-</body>
-
-</html>
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+98:             </svg>
+99:             </a>
+100:       
+101:             <a class="d-inline-block social-icon" target="_blank" href="{{site.social.facebook}}">
+102:               <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+103:               <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+104:             </svg>
+105:             </a>
+106: 
+107:           </div> -->
+108: 
+109:         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+110:           aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+111:           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+112:             class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+113:             <path
+114:               d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+115:           </svg>
+116:         </button>
+117: 
+118:         <div class="collapse navbar-collapse" id="navbarResponsive">
+119:           <ul class="navbar-nav ml-auto font-weight-bold d-flex align-items-center">
+120:             {% for item in site.data.menus.topmenu %}
+121:             <li class="nav-item">
+122:               <a class="nav-link px-3 {% if item.class %}btn-grad{% endif %}"
+123:                 href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}"
+124:                 alt="{{item.title}}">{{item.title}}</a>
+125:             </li>
+126:             {% endfor %}
+127:           </ul>
+128:         </div>
+129: 
+130:       </div>
+131:     </nav>
+132:   </div>
+133: 
+134: 
+135:   <!-- Container
+136: ================================================== -->
+137:   <main class="container">
+138:     {{ content }}
+139:   </main>
+140: 
+141:   <!-- Footer
+142: ================================================== -->
+143:   <footer class="footer container text-center">
+144: 
+145:     <!-- CREDITS BEGIN.-->
+146: 
+147:     <div class="credits mx-auto text-center mb-3">
+148:       <a class="hover-opacity font-weight-bold" href="/">
+149:         <img src="{{site.baseurl}}/assets/images/messi-lionel-fc-logo.png" alt="Lionel Messi FC">
+150:       </a>
+151:     </div>
+152:     <!-- CREDITS END -->
+153: 
+154:     <ul class="p-0 mb-1 small">
+155:       {% for item in site.data.menus.footermenu %}
+156:       <li>
+157:         <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}"
+158:           alt="{{item.title}}">{{item.title}}</a>
+159:       </li>
+160:       {% endfor %}
+161:     </ul>
+162:     <div class="copyright small">
+163:       Copyright © {{site.title}}. All rights reserved.
+164:     </div>
+165:   </footer>
+166: 
+167:   <!-- JavaScript
+168: ================================================== -->
+169:   <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+170:   <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+171:   <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
+172: 
+173:   <div class="gtranslate_wrapper"></div>
+174:   <script>window.gtranslateSettings = { "default_language": "en", "native_language_names": true, "detect_browser_language": true, "wrapper_selector": ".gtranslate_wrapper" }</script>
+175:   <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+176: 
+177:   <!-- Bot Detection -->
+178:   <script>
+179:     // Initialize the agent on page load.
+180:     const fpPromise = import('https://fpjscdn.net/v3/piJr4xhOOfCxkyMC6Ci7')
+181:       .then(FingerprintJS => FingerprintJS.load())
+182: 
+183:     // Get the visitorId when you need it.
+184:     fpPromise
+185:       .then(fp => fp.get())
+186:       .then(result => {
+187:         const visitorId = result.visitorId
+188:         console.log(visitorId)
+189:       })
+190:   </script>
+191: 
+192:   <!-- Yandex.Metrika counter -->
+193:   <script type="text/javascript">
+194:       (function (m, e, t, r, i, k, a) {
+195:         m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+196:         m[i].l = 1 * new Date();
+197:         for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+198:         k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+199:       })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=105712574', 'ym');
+200: 
+201:     ym(105712574, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", accurateTrackBounce: true, trackLinks: true });
+202:   </script>
+203:   <noscript>
+204:     <div><img src="https://mc.yandex.ru/watch/105712574" style="position:absolute; left:-9999px;" alt="" /></div>
+205:   </noscript>
+206:   <!-- /Yandex.Metrika counter -->
+207: 
+208: </body>
+209: 
+210: </html>
