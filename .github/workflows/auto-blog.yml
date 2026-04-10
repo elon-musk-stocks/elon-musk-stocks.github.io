@@ -66,6 +66,10 @@ jobs:
           echo "🖼️ Generated images:"
           ls -lh assets/images/ | tail -5
       
+      - name: Verify layout integrity
+        run: |
+          python scripts/verify_layout.py
+      
       - name: Debug files
         run: |
           echo "=== Working Directory ==="
