@@ -1,19 +1,13 @@
-"""Manage curated Ronaldo image library"""
-import os
-import random
-import shutil
-from PIL import Image
-
-MESSI_LIBRARY = "assets/images/messi-library"
+MUSK_LIBRARY = "assets/images/musk-library"
 IMAGE_CATEGORIES = {
-    "training": ["training", "workout", "gym", "exercise"],
-    "field": ["field", "soccer", "football", "pitch"],
-    "celebration": ["celebration", "goal", "world cup"],
-    "lifestyle": ["lifestyle", "casual", "fashion"]
+    "technology": ["tech", "ai", "robot", "software", "innovation"],
+    "aerospace": ["spacex", "rocket", "satellite", "starlink", "mars"],
+    "finance": ["stock", "chart", "trading", "investment", "money"],
+    "lifestyle": ["elon", "ceo", "visionary", "office", "minimalist"]
 }
 
-def get_curated_ronaldo_image(title="", category=None):
-    """Get a curated Messi image, optionally matching category
+def get_curated_musk_image(title="", category=None):
+    """Get a curated Musk/Tech image, optionally matching category
     
     Args:
         title: Blog post title (used to match relevant images)
@@ -23,19 +17,19 @@ def get_curated_ronaldo_image(title="", category=None):
         Path to selected image or None
     """
     
-    if not os.path.exists(MESSI_LIBRARY):
-        print(f"⚠️ Messi library not found: {MESSI_LIBRARY}")
+    if not os.path.exists(MUSK_LIBRARY):
+        print(f"⚠️ Musk library not found: {MUSK_LIBRARY}")
         return None
     
     # Get all images
     image_extensions = ('.jpg', '.jpeg', '.png', '.webp')
     all_images = [
-        f for f in os.listdir(MESSI_LIBRARY)
+        f for f in os.listdir(MUSK_LIBRARY)
         if f.lower().endswith(image_extensions)
     ]
     
     if not all_images:
-        print(f"⚠️ No images found in {MESSI_LIBRARY}")
+        print(f"⚠️ No images found in {MUSK_LIBRARY}")
         return None
     
     # Try to match category from title
@@ -55,12 +49,12 @@ def get_curated_ronaldo_image(title="", category=None):
         if category_images:
             selected = random.choice(category_images)
             print(f"🎯 Selected {category} image: {selected}")
-            return os.path.join(MESSI_LIBRARY, selected)
+            return os.path.join(MUSK_LIBRARY, selected)
     
     # Random selection if no category match
     selected = random.choice(all_images)
     print(f"🖼️ Selected random image: {selected}")
-    return os.path.join(MESSI_LIBRARY, selected)
+    return os.path.join(MUSK_LIBRARY, selected)
 
 
 def optimize_image(source_path, output_path, max_width=1920, max_height=960, quality=85):

@@ -7,9 +7,9 @@ POSTS_DIR = "_posts"
 IMAGES_DIR = "assets/images"
 
 # Site settings
-SITE_DOMAIN = "https://messi-lionel.github.io"
-MAIN_SUBJECT = "Lionel Messi"
-MAIN_PLAYER_HASHTAGS = "#messi #lionelmessi #football #soccer #intermiami #goat"
+SITE_DOMAIN = "https://elon-musk-stocks.github.io"
+MAIN_SUBJECT = "Elon Musk"
+MAIN_PLAYER_HASHTAGS = "#elonmusk #spacex #tesla #ai #future #technology"
 
 # AI Models
 TEXT_MODEL = "gemini-2.5-flash"

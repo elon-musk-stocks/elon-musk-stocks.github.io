@@ -1,18 +1,18 @@
 ---
 layout: page
 title: "Privacy Policy"
-description: "Read the privacy policy of messi-lionel.github.io, your source for football news and updates including Lionel Messi, LM10, and more."
+description: "Read the privacy policy of elon-musk-stocks.github.io, your source for deep-dives into Elon Musk stocks, Tesla, SpaceX, and futuristic tech."
 permalink: /privacy-policy/
 comments: false
 ---
 
-Welcome to **[Lionel Messi FC](https://messi-lionel.github.io/)**. Your privacy is important to us. This Privacy Policy explains how Lionel Messi FC collects, use, and protect your information when you visit our website.
+Welcome to **[Elon Musk Stocks](https://elon-musk-stocks.github.io/)**. Your privacy is important to us. This Privacy Policy explains how Elon Musk Stocks collects, uses, and protects your information when you visit our website.
 
 ---
 
-## 🔍 Information Lionel Messi FC Collects
+## 🔍 Information Elon Musk Stocks Collects
 
-Lionel Messi FC may collect non-personal identification information about users whenever they interact with our site. This includes:
+Elon Musk Stocks may collect non-personal identification information about users whenever they interact with our site. This includes:
 
 - Browser name
 - IP address
@@ -21,7 +21,7 @@ Lionel Messi FC may collect non-personal identification information about users 
 - Internet service provider
 - Pages visited and time spent
 
-If you subscribe to our newsletter or leave comments (if enabled), Lionel Messi FC may collect your name and email address.
+If you subscribe to our newsletter or leave comments (if enabled), Elon Musk Stocks may collect your name and email address.
 
 ---
 
@@ -37,32 +37,32 @@ You can disable cookies through your browser settings.
 
 ---
 
-## 📩 How Lionel Messi FC Uses Collected Information
+## 📩 How Elon Musk Stocks Uses Collected Information
 
-Lionel Messi FC uses the collected information to:
+Elon Musk Stocks uses the collected information to:
 
 - Improve our website experience
 - Personalize content
 - Monitor analytics and user behavior
 - Send periodic emails or updates (only if you opt-in)
 
-Lionel Messi FC **does not sell**, trade, or rent user personal information.
+Elon Musk Stocks **does not sell**, trade, or rent user personal information.
 
 ---
 
-## 🔐 How Lionel Messi FC Protects Your Information
+## 🔐 How Elon Musk Stocks Protects Your Information
 
-Lionel Messi FC uses industry-standard security tools and best practices to ensure your data is safe. However, please note that no method of transmission over the Internet is 100% secure.
+Elon Musk Stocks uses industry-standard security tools and best practices to ensure your data is safe. However, please note that no method of transmission over the Internet is 100% secure.
 
 ---
 
 ## 👥 Third-Party Services
 
-Lionel Messi FC may use third-party services like:
+Elon Musk Stocks may use third-party services like:
 
 - Google Analytics
 - Google AdSense
-- Social sharing tools (e.g., Twitter, Facebook)
+- Social sharing tools (e.g., X, Facebook)
 
 These services may use cookies or tracking technologies. Please refer to their individual privacy policies for more details.
 
@@ -70,7 +70,7 @@ These services may use cookies or tracking technologies. Please refer to their i
 
 ## 🚫 Children's Privacy
 
-Our site is not intended for children under the age of 13. Lionel Messi FC does not knowingly collect any information from children.
+Our site is not intended for children under the age of 13. Elon Musk Stocks does not knowingly collect any information from children.
 
 ---
 
@@ -82,7 +82,7 @@ By using our site, you consent to our Privacy Policy.
 
 ## 🔁 Changes to This Policy
 
-Lionel Messi FC may update this policy from time to time. When Lionel Messi FC does, it will revise the "Last updated" date at the top of this page.
+Elon Musk Stocks may update this policy from time to time. When Elon Musk Stocks does, it will revise the "Last updated" date at the top of this page.
 
 ---
 
@@ -90,7 +90,7 @@ Lionel Messi FC may update this policy from time to time. When Lionel Messi FC d
 
 If you have any questions about this Privacy Policy, you can contact us:
 
-**Email**: [lionelmessi.help@gmail.com]
+**Email**: [contact@elon-musk-stocks.com]
 
-Thank you for trusting **[Lionel Messi FC](https://messi-lionel.github.io/)** – your home for football passion and LM10 news!
+Thank you for trusting **[Elon Musk Stocks](https://elon-musk-stocks.github.io/)** – your source for market analysis and the future of technology!
 

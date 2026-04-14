@@ -81,7 +81,7 @@ def shuffle_keywords_file():
 
 if __name__ == "__main__":
     print("=" * 70)
-    print("🔀 Keyword Shuffler for https://ur-cristiano-fc.github.io")
+    print("🔀 Keyword Shuffler for https://elon-musk-stocks.github.io")
     print("=" * 70)
     shuffle_keywords_file()
     print("=" * 70)

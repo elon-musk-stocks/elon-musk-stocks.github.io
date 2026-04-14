@@ -49,7 +49,7 @@ def send_webpushr_notification(title, message, target_url, image_url=None):
             "title": title,
             "message": message,
             "target_url": target_url,
-            "icon": f"{SITE_DOMAIN}/assets/images/site-logo.webp",  # Your site logo
+            "icon": f"{SITE_DOMAIN}/assets/images/logo.png",
             "auto_hide": 1  # Auto hide after shown
         }
         

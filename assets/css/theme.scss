@@ -1,32 +1,36 @@
 ---
 ---
-$green: #08a057 !default;
-$blue: #3d61fd !default;
+$accent-primary: #00f2ff !default; // Neon Cyan
+$accent-secondary: #ff0055 !default; // SpaceX Red
+$bg-primary: #0b0e14 !default;
+$bg-secondary: #161b22 !default;
+$text-primary: #e6edf3 !default;
+$text-muted: #8b949e !default;
+$border-color: #30363d !default;
 
 @import 'bootstrap/bootstrap';
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap');
 
-/* add additional CSS rules below */
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background: #d6a7a7;
+    background: $bg-primary;
     font-size: 17px;
     transition: all 200ms linear;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 1.7;
-    color: #333;
+    color: $text-primary;
     overflow-x: hidden;
     padding-top: 116px;
-
 }
 
 .serif-font {
-    font-family: PT Serif;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 1366px) {
@@ -46,22 +50,12 @@ main {
     min-height: 500px;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.navbar-light .navbar-brand,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.navbar-brand,
 .text-dark,
 .dropdown-item {
-    color: #000;
+    color: $text-primary !important;
 }
 
 h1,
@@ -167,7 +161,9 @@ small,
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     position: fixed;
-    background: #d6a7a7;
+    background: rgba($bg-primary, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid $border-color;
 }
 
 .social-icon {
@@ -194,8 +190,11 @@ small,
 /* Pages
 ================================================== */
 .hero {
-    background: #d6a7a7;
+    background: $bg-secondary;
     padding: 3rem 0;
+    border-radius: 12px;
+    border: 1px solid $border-color;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -281,18 +280,19 @@ small,
     top: 15px;
     height: 1px;
     content: '';
-    background-color: #efefef;
+    background-color: $border-color;
 }
 
 .section-title span {
-    background-color: #fff;
+    background-color: $bg-primary;
     position: relative;
     z-index: 2;
     display: inline-block;
     padding: 0px 15px 0 0;
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    color: $accent-primary;
 }
 
 .layout-page .section-title span {
@@ -494,13 +494,59 @@ blockquote {
 }
 
 
-.card {
-    border: 0;
+.post-card {
+    background: $bg-secondary;
+    border: 1px solid $border-color;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba($accent-primary, 0.15);
+        border-color: $accent-primary;
+        
+        .card-title a {
+            color: $accent-primary !important;
+        }
+    }
 }
 
-.card .img-thumb {
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
+.card-img-container {
+    height: 200px;
+    overflow: hidden;
+    background: #000;
+    position: relative;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    &:hover img {
+        transform: scale(1.1);
+    }
+}
+
+.card-img-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, $bg-primary, $bg-secondary);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.metafooter {
+    border-top: 1px solid $border-color !important;
 }
 
 ul.tags {
@@ -665,7 +711,7 @@ ul.tags li a:hover {
 }
 
 .sidebar h5 span {
-    background-color: #d6a7a7;
+    background-color: $bg-primary;
     position: relative;
     z-index: 2;
     display: inline-block;
@@ -673,7 +719,8 @@ ul.tags li a:hover {
     text-align: center;
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    color: $accent-secondary;
 }
 
 .sidebar h5:before {
@@ -685,7 +732,7 @@ ul.tags li a:hover {
     width: 100%;
     height: 1px;
     content: '';
-    background-color: #333333;
+    background-color: $border-color;
 }
 
 .sidebar ul {
@@ -751,6 +798,9 @@ ul.tags li a:hover {
 .article-post .h1,
 .article-post .h2,
 .article-post .h3,
+.article-post .h1,
+.article-post .h2,
+.article-post .h3,
 .article-post .h4,
 .article-post .h5,
 .article-post .h6,
@@ -760,9 +810,10 @@ ul.tags li a:hover {
 .article-post h4,
 .article-post h5,
 .article-post h6 {
-    font-weight: 600;
-    font-family: PT Sans;
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
     margin-top: 3rem;
+    color: $accent-primary;
 }
 
 img {
@@ -771,15 +822,23 @@ img {
 }
 
 .bottompagination span.navigation a {
-    background: #d6a7a7;
-    color: #333;
-    padding: 5px;
-    border-radius: 3px;
-    text-transform: none;
-    font-weight: 600;
-    letter-spacing: 0;
-    min-width: 100px;
+    background: $bg-secondary;
+    color: $accent-primary;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    min-width: 120px;
     display: inline-block;
+    border: 1px solid $border-color;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    
+    &:hover {
+        background: $accent-primary;
+        color: $bg-primary;
+        border-color: $accent-primary;
+    }
 }
 
 .pointerup {
@@ -817,14 +876,15 @@ span.navigation:before {
 
 .pagination {
     display: inline-block;
-    background: #fff;
+    background: $bg-primary;
     z-index: 1;
     position: relative;
     padding: 0 20px;
     font-size: 13px;
-    letter-spacing: 0.5px;
-    font-weight: 500;
+    letter-spacing: 1px;
+    font-weight: 600;
     text-transform: uppercase;
+    color: $text-muted;
 }
 
 .footer {
@@ -860,24 +920,6 @@ span.navigation:before {
     }
 }
 
-.offer-count-down {
-    background: #ffeb3b;
-    text-align: center;
-    padding: 3px 0;
-    font-weight: 600;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10000;
-    font-size: 13px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.offer-count-down a {
-    color: #377fc8 !important;
-    text-decoration: underline;
-}
 
 #countdown {
     display: inline-block !important;

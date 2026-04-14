@@ -81,10 +81,10 @@ Generate the Instagram post:
         
         # Fallback caption
         return {
-            'caption': f"⚽ {title[:100]}",
+            'caption': f"📈 {title[:100]}",
             'hashtags': MAIN_PLAYER_HASHTAGS,
-            'cta': "🔗 Link in bio for full article!",
-            'full_caption': f"⚽ {title[:100]}\n\n🔗 Link in bio for full article!\n\n{MAIN_PLAYER_HASHTAGS}"
+            'cta': "🔗 Click the link in bio for the full analysis!",
+            'full_caption': f"📈 {title[:100]}\n\n🔗 Click the link in bio for the full analysis!\n\n{MAIN_PLAYER_HASHTAGS}"
         }
 
 
@@ -224,11 +224,11 @@ def post_article_to_instagram(title, focus_kw, article, image_path, permalink):
 if __name__ == "__main__":
     # Test with sample data
     result = post_article_to_instagram(
-        title=f"{MAIN_SUBJECT}'s Training Routine",
-        focus_kw=f"{MAIN_SUBJECT.lower()} training",
+        title=f"Tesla Stock Forecast 2026",
+        focus_kw=f"tesla stock forecast",
         article="Sample article content...",
         image_path="assets/images/test.webp",
-        permalink="messi-training"
+        permalink="tesla-stock-forecast"
     )
     
     print(f"\nResult: {result}")

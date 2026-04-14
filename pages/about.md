@@ -1,45 +1,45 @@
 ---
 layout: page
-title: "About Us"
+title: "About Alpha Investor"
 permalink: /about/
-description: "Learn more about messi-lionel.github.io, your ultimate destination for football news, Lionel Messi updates, and match highlights."
+description: "Welcome to Elon Musk Stocks, your ultimate hub for deep dives into Tesla, SpaceX, xAI, and the entire Elon Musk ecosystem."
 ---
 
-Welcome to **[Lionel Messi FC](https://messi-lionel.github.io/)** – your ultimate hub for everything **Lionel Messi** and world football 🌍⚽
+Welcome to **[Elon Musk Stocks](https://elon-musk-stocks.github.io/)** – the premier source for in-depth analysis on the world’s most ambitious ventures.
 
-Whether you're a die-hard Messi fan, a Ligue 1 or MLS follower, or just someone who lives for the thrill of the game, this is the place for you.
+Whether you're a long-term **Tesla** bull, a **SpaceX** enthusiast, or a retail investor looking to understand the "Muskonomy," this platform is built for you. We track the numbers, the engineering, and the market-moving news that matters.
 
 ---
 
 ## 🎯 Our Mission
 
 Our goal is simple:  
-To deliver the latest football news, matchday highlights, transfer updates, and exclusive insights with a special focus on **Lionel Messi** – the legend, the GOAT, the icon. 🐐
+To deliver the most accurate, real-world analysis of **Elon Musk’s business empire**. We don't just follow the price action; we follow the innovation, the patents, and the long-term vision of a multi-planetary future.
 
 ---
 
 ## 📰 What You’ll Find Here
 
-- ⚡ **Breaking football news**
-- 🎥 **Live match commentary & post-match analysis**
-- 🏆 **Lionel Messi career updates**
-- 📅 **Fixtures, results, and performance stats**
-- 💬 **Fan reactions and trending football moments**
+- ⚡ **Real-time Tesla (TSLA) stock forecasts**
+- 🚀 **Updates on SpaceX private rounds and IPO rumors**
+- 🤖 **Deep dives into xAI, Grok, and the future of Artificial Intelligence**
+- 🧠 **Neuralink and The Boring Company progress tracking**
+- 💬 **Expert opinions on the "Muskonomy" ecosystem**
 
-Lionel Messi FC aims to make football news **engaging, easy-to-understand, and always up-to-date**.
+Elon Musk Stocks aims to make complex financial and technical news **engaging, data-driven, and always ahead of the curve**.
 
 ---
 
 ## 🤝 Get in Touch
 
 We’d love to hear from you!  
-For feedback, collabs, or just to say hello, reach out:
+For analysis requests, collaborations, or partnership inquiries:
 
-📧 **lionelmessi.help@gmail.com**
+📧 **contact@elon-musk-stocks.com**
 
-Follow us, support us, and let’s celebrate football greatness together! 🚀  
-_#ForTheFans #MessiForever_
+Join the circle, support our mission, and let’s track the future of humanity together! 🚀  
+_#Muskonomy #AlphaInvestor #Tesla #SpaceX_
 
 ---
 
-*Thank you for visiting **[Lionel Messi FC](https://messi-lionel.github.io/)** — powered by passion, backed by football love.* ❤️⚽
+*Thank you for visiting **[Elon Musk Stocks](https://elon-musk-stocks.github.io/)** — powered by data, backed by a passion for the future.* 📈🚀

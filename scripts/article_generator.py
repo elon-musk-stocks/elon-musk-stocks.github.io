@@ -80,7 +80,7 @@ layout: post
 title: "{escaped_title}"
 description: "{description}"
 keywords: "{focus_kw}"
-author: ishowspeed
+author: alphainvestor
 image: assets/images/featured_{permalink}.webp
 ---"""
        
@@ -125,19 +125,19 @@ def generate_image_prompt(title):
     """Generate image prompt for Freepik AI"""
     
     # Remove celebrity names from title for image generation
-    title_cleaned = title.replace("Lionel Messi", "professional athlete")
-    title_cleaned = title_cleaned.replace("Messi", "elite footballer")
-    title_cleaned = title_cleaned.replace("GOAT", "top athlete")
+    title_cleaned = title.replace("Elon Musk", "tech visionary")
+    title_cleaned = title_cleaned.replace("Tesla", "futuristic EV")
+    title_cleaned = title_cleaned.replace("SpaceX", "aerospace company")
     
     prompt = f"""
 create a search term to get a high-quality image  related to the blog post with the following from unsplash and pixel
 Title: {title_cleaned}
 
 Requirements:
-- Professional male athlete in peak physical condition
-- Athletic build, focused and determined expression
-- High-quality, realistic sports/training scene
-- Modern fitness environment or training facility
+- Professional tech entrepreneur or visionary leader in a modern setting
+- High-tech environment (clean minimalist office, aerospace facility, or futuristic data center)
+- High-quality, cinematic lighting, corporate-tech aesthetic
+- Abstract representations of global innovation or financial charts
 - NO text or words in the image
 
 
@@ -153,9 +153,9 @@ Return ONLY the image prompt, nothing else.
     image_prompt = response.text.strip()
     
     # Additional safety check - remove any celebrity names from generated prompt
-    image_prompt = image_prompt.replace("Lionel Messi", "professional athlete")
-    image_prompt = image_prompt.replace("Messi", "elite footballer")
-    image_prompt = image_prompt.replace("GOAT", "top athlete")
+    image_prompt = image_prompt.replace("Elon Musk", "tech visionary")
+    image_prompt = image_prompt.replace("Tesla", "modern electric vehicle")
+    image_prompt = image_prompt.replace("SpaceX", "space exploration rocket")
     
     print(f"✅ Image prompt: {image_prompt[:100]}...")
     

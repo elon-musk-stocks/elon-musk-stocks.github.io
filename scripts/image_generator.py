@@ -36,14 +36,15 @@ Requirements:
 - Return ONLY the search queries, one per line, nothing else
 
 Examples:
-Title: "Cristiano Ronaldo'nun Annesi ile Yapılan Röportajlardan 20 Söz"
-cristiano ronaldo with mother
-cristiano ronaldo maria dolores
-cristiano ronaldo family
+Title: "Tesla Stock Forecast 2026: Why Bulls Are Betting on $500"
+tesla gigafactory interior
+tesla robot taxi concept
+tesla fsd technology
 
-Title: "Cristiano Ronaldo's Training Routine"
-cristiano ronaldo training
-cristiano ronaldo gym workout
+Title: "SpaceX Starlink IPO: Is the 2026 Spin-off Confirmed?"
+starlink satellite constellation
+spacex rocket launch night
+spacex starship orbiting earth
 
 Now generate for the given title above. Return ONLY the search queries, one per line:
 """
