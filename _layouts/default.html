@@ -15,8 +15,8 @@
 
   <!-- CRITICAL: Do not add leading spaces in the Liquid strings below. 
        Breaking these paths will disable the site's styling. -->
-  <link href="{{ " /assets/css/theme.css" | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M%S" }}" rel="stylesheet">
-  <link href="{{ " /assets/css/custom.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ "/assets/css/theme.css" | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M%S" }}" rel="stylesheet">
+  <link href="{{ "/assets/css/custom.css" | relative_url }}" rel="stylesheet">
   <!-- END CRITICAL -->
 
   {% if jekyll.environment == "production" %}
