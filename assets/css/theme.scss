@@ -1,6 +1,4 @@
----
----
-$accent-primary: #00f2ff !default; // Neon Cyan
+--- --- $accent-primary: #00f2ff !default; // Neon Cyan
 $accent-secondary: #ff0055 !default; // SpaceX Red
 $bg-primary: #0b0e14 !default;
 $bg-secondary: #161b22 !default;
@@ -50,8 +48,18 @@ main {
     min-height: 500px;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
 .navbar-brand,
 .text-dark,
 .dropdown-item {
@@ -425,7 +433,7 @@ span.post-read-more a:hover {
 .article-post {
     font-size: 1.18em;
     line-height: 1.64;
-    color: rgba(0, 0, 0, .8);
+    color: #e6edf3 !important;
 
     code {
         font-size: 15px;
@@ -500,12 +508,12 @@ blockquote {
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     &:hover {
         transform: translateY(-8px);
         box-shadow: 0 12px 24px rgba($accent-primary, 0.15);
         border-color: $accent-primary;
-        
+
         .card-title a {
             color: $accent-primary !important;
         }
@@ -517,14 +525,14 @@ blockquote {
     overflow: hidden;
     background: #000;
     position: relative;
-    
+
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         transition: transform 0.5s ease;
     }
-    
+
     &:hover img {
         transform: scale(1.1);
     }
@@ -833,7 +841,7 @@ img {
     display: inline-block;
     border: 1px solid $border-color;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    
+
     &:hover {
         background: $accent-primary;
         color: $bg-primary;
