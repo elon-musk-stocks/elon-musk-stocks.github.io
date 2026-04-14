@@ -1,6 +1,4 @@
----
----
-$accent-primary: #00f2ff !default; // Neon Cyan
+--- --- $accent-primary: #00f2ff !default; // Neon Cyan
 $accent-secondary: #ff0055 !default; // SpaceX Red
 $bg-primary: #0b0e14 !default;
 $bg-secondary: #161b22 !default;
@@ -435,7 +433,13 @@ span.post-read-more a:hover {
 .article-post {
     font-size: 1.18em;
     line-height: 1.64;
-    color: #e6edf3 !important;
+    color: #5c9475 !important;
+
+    p {
+        strong {
+            color: #8db8de !important;
+        }
+    }
 
     code {
         font-size: 15px;
